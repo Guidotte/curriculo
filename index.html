@@ -1,48 +1,233 @@
 <!DOCTYPE html>
-<html lang="pt-BR"></html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <style>
-        *, *::before, *::after {
+    <title>Curriculo - Jeniffer Paloma Guidotte</title>
+     <style>
+        * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
-        div {
-            width: 50%;
-            height: 75px;
-            background-color: blue;
-            margin: 5px;
+        body {
+            font-family: 'Segoe UI' , Tahoma, Geneva, Verdana, sans-serif;
+            background-color:white;
+            color: black;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background:pink;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            border-bottom: 3px solid black;
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+        }
+        .foto-perfil {
+            width: 140px;
+            height: 180px;
+            border-radius: 8PX;
+            object-fit: contain;
+            border: 2px solid black;
+            background-color: lightgray;
+            flex-shrink: 0;
+        }
+        .dados-pessoais h1 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .dados-pessoais p {
+            flex: 1;
+            text-align: left;
+            display: block;
+            align-items: center;
+            gap: 25px;
+            font-size: 16px;
+            font-style: italic;
+            color:black;
+            margin-bottom: 6px;
+        }
+        .dados-pessoais strong {
+            color: black;
+            margin-right: 4px;
+        }
+        section{
+            margin-bottom: 28px;
+        }
+        h2 {
+            font-size: 18px;
+            color: black;
+            text-transform: uppercase;
+            border-bottom: 1.5px solid lightgray;
+            padding-bottom: 6px;
+            margin-top: 35px;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .item {
+            margin-bottom: 14px;
+        }
+        .titulo-item {
+            font-weight: bold;
+            font-size: 15px;
+            color: black;
+        }
+        .subtitulo-item {
+            font-size: 13px;
+            color:black;
+            margin-bottom: 4px;
+        }
+        .detalhes-item {
+            font-size: 14px;
+            color:black;
+        }
+        .status-cursando {
+            background-color: aliceblue;
+            color: black;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 2px 8px;
+            border-radius: 12px;
+            border: 1px solid skyblue;
             display: inline-block;
+            margin-left: 5px;
         }
-
-        @media screen and (min-wid: 768px) {
-            div {
-                width: 40%;
-                background-color: red;
-            }
+        .grid-cursos {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
         }
-
-        @media screen and (min-width: 992px) {
-            div {
-                width:30%;
-                background-color: green;
-            
-            }
+        .card-cursos {
+            background: whitesmoke;
+            padding: 10px 15px;
+            border-left: 4px solid black;
+            border-radius: 0 4px 4px 0;
         }
-        img,
-    </style>
-
+     </style>
 </head>
 <body>
-    <head>
-        <h1>
+    <div class="container"> 
+       <header class="header">
+        <img src="foto.jpeg" alt="foto de Jeniffer Paloma Guidotte" class="foto-perfil">
 
-        </h1>
+        <div class="dados-pessoais"> 
+            <h1>Jeniffer Paloma Guidotte</h1>
+             <p style="font-weight: bold; color:black; margin-bottom: 8px;">Desenvolvimento de Software e multiplataforma / Web</p>
+            <p><strong>Idade:</strong> 32 Anos | <strong>Nascimento:</strong>09/09/1994</p>
+            <p><strong>Endereço:</strong> Rua Joâo freire Menezes, nº 160 - Parque Tiradentes (Antiga Rua 2)</p>
+            <p><strong>E-mail:</strong>Jenifferguidotte464@gmail.com</p>
+            <p><strong>Celular:</strong> (19) 98115-1656 | <strong> Recado (Beatriz):</strong> (19) 99929-7115</p>
+        </div>
+    </header>
+    <section>
+        <h2>Objetivo profissional</h2>
+        <p class="detalhes-item"> 
+            Atuar na área de Tecnologia da Informação / Desenvolvimento web, aplicando conhecimentos em HTML, CSS, JavaScript, lógica d programação e banco de dados, com foco em aprendizado continuo e volução profissional.
+            </p>
+            </section>
+        
+            <section> 
+                <h2>formação Acadêmica</h2>
+                <div class="item">
+                    <div class="titulo-item">
+                        Curso Superior de Tecnologia em Desenvolvimento de Software e multiplataforma <span class="status-cursando">Cursando</span>
+                    </div>
+                    <div class="subtitulo-item">FATEC / Instituição de Ensino Superior</div>
+                    <div class="detalhes-item">Formação focada em Análise e Desenvolvimento de Sistemas, Programação Web, Lógica de Programação, SQL e Engenharia de Software.</div>
+                    </div>
+                    </section>
 
-    </head>
+                    <selection> 
+                        <h2>Curso & Qualicações Profissionais</h2>
+                        <div class="grid-cursos"> 
+
+                            <div class="card-cursos">
+                                <div class="titulo-item">Técnico em Enfermagem - ALBERTO FERES</div>
+                                <div class="subtitulo-item">Período: 24/01/2023 a 31/07/2025 | Carga Horária: 2.300 horas (1.200h TCC + 740h Estágio + Aumento Férias)</div>
+                                </div>
+
+                                <div class="card-cursos">
+                                    <div class="titulo-item">LIBRAS - Comunicação com o surdo por meio da Língua de Sinais - SENAI</div>
+                                    <div class="subtitulo-item">Período: 20/03/2024 a 03/06/2024 | Carga Horária:160 horas</div>
+                                </div>
+
+                                <div class="card-cursos">
+                                    <div class="titulo-item">Técnico em Informática - UNAR</div>
+                                    <div class="subtitulo-item">Período: 20/12/2014 a 10/12/2015 | Carga Horária: 1.200 horas</div>
+                                </div>
+
+                                <div class="card-cursos">
+                                    <div class="titulo-item">Traçador de Caldeiraria - SENAI</div>
+                                    <div class="subtitulo-item">SENAI | Período: 21/09/2013 a 17/12/2013 | Carga Horária: 168 horas</div>
+                                </div>
+
+                                <div class="card-cursos">
+                                    <div class="titulo-item">Almoxarife - SENAI</div>
+                                    <div class="subtitulo-item">Período: 25/03/2013 a 12/06/2013 | Carga Horária</div>
+                                </div>
+
+                                <div class="card-cursos">
+                                    <div class="titulo-item">Assistente Administrativo - SENAI</div>
+                                    <div class="subtitulo-item">Período: 12/03/2012 a 09/05/2012 | Carga Horária: 160 horas</div>
+                                </div>
+
+                        </div>
+                        </select>
+
+                        <section> 
+                            <h2>Experiência profissional</h2>
+
+                            <div class="item"> 
+                                <div class="titulo-item">
+                                    <div class="titulo-item">Ajudante de Restaurante - Anete Ribeiro Spinola</div>
+                                    <div class="subtitulo-item">Período: 02/03/2026 - Atual</div>
+                                    <div class="detalhes-item">Atendimento ao cliente, auxílio no preparo de refeições e organização do ambiemte.</div>
+                                </div>
+
+                                <div class="titulo-item">Atendente - Lavoro Bourbon Cafeteria</div>
+                                <div class="subtitulo-item">Período: 25/09/2025 a 18/02/2026</div>
+                                <div class="detalhes-item">Atendimento ao público, operação de caixa e preparo de bebidas e lanches.</div>
+                            </div>
+
+                                <div class="item">
+                                    <div class="titulo-item">Auxiliar de Enfermagem - Santa Casa de Misericórdia de Rio Claro</div>
+                                    <div class="subtitulo-item">Período: 01/2025 - 02/2025 (Contrato Temporário)</div>
+                                    <div class="detalhes-item">Cuidados diretos ao paciente, aferição de sinais vitais e suporte á equipe de enfermagem.</div>
+
+                                </div>
+
+                                <div class="item">
+                                <div class="titulo-item">Atendente / Auxiliar - Padaria do Martone</div>
+                                <div class="subtitulo-item">Periodo: 01/9/2015 a 31/05/2016 / Mais (3 anos e meio como Profissional Autônoma)</div>
+
+                                <section>
+                                    <h2>Habilidades & competências</h2>
+                                    <div class="item">
+                                        <div class="detalhes-item">
+                                            <p><strong>Conhecomentos Técnicos:</strong> HTML5, CSS3, JavaScript, SQL, Git, GitHub e lógica de Programação.</p>
+                                            <p><strong>Habilidades Comportamentais:</strong> Trabalho em equipe, organização, comunicação assertiva e proatividadde.</p>
+                                        </div>
+                                    </div>
+                                </section>
+
+                </div>            
+        </section>
+
+    </div>
+    
 </body>
 </html>
